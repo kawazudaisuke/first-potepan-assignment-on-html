@@ -9,18 +9,21 @@ a{
 body{
     font-family:sans-serif;
 }
+
 /*
 記述の順番（基準）
-１ 性質の変更に関する事項：display
-２　箱の配置に関する事項
- （1）margin,padding
-３　箱の形態に関する事項
-（1）width,height,border
-４　中身に関する事項
-　(1) font
-　(2) color
+１　要素の性質の変更に関する事項：display
+２　要素の配置に関する事項
+ (1) position(relative, absolute)
+ (2) margin,padding,z-index
+３　要素の形状に関する事項
+    width,height,border...
+４　要素の表示に関する事項
+ (1) font関連
+ (2) background関連
+ (3) opacity
 
-背景使用色：#fffaf0
+＊背景使用色：#fffaf0
 
 */
 
@@ -45,7 +48,6 @@ header{
     margin-left:150px;
 }
 
-
 .head-list span{
     font-size:10px;
 }
@@ -64,11 +66,11 @@ header{
 
 .head-freeCouncel{
     display:inline-block;
-    vertical-align:20%;
     margin-left:10px;
+    vertical-align:20%;
+    padding:0 20px 0 20px;
     border-radius:20px;
     height:40px;
-    padding:0 20px 0 20px;
     background-color:orange;
     color:white;
     font-size:12px;
@@ -79,7 +81,7 @@ header{
     opacity:0.9;
 }
 
-/*トップセクションです*/
+/*トップセクションです。「Webエンジニアをめざすなら、本気のプログラミング学習」*/
 
 .section-top{
     z-index:0.5;
@@ -94,7 +96,6 @@ header{
 .top-contents-wrap{
     padding-top:230px;
     margin-left:200px;
-
 }
 
 .top-contents-wrapper{
@@ -111,12 +112,11 @@ header{
 .top-contents-wrapper p{
     font-size:20px;
 }
+
 .top-img-logo{
     width:350px;
     height:40px;
 }
-
-
 
 .top-freeCouncel{
     display:block;
@@ -131,6 +131,10 @@ header{
     background-color:orange;
 }
 
+.top-freeCouncel:hover{
+    opacity:0.9;    
+}
+
 .top-img-badge{
     vertical-align:top;
 }
@@ -140,14 +144,12 @@ header{
    width:550px;
    color:grey;
    font-size:10px;
-
 }
 
-/*2番目のセクションです*/
+/*2番目のセクション　ポテパンキャンプとは*/
 
 .section-second{
     background-color:orange;
-    
 }
 
 .second-contents-wrap{
@@ -157,16 +159,18 @@ header{
     width:500px;
     color:white;
 }
+
 .second-contents-wrap h1{
     margin-top:50px;
     font-size:40px;
-    
 }
 
 .second-contents-wrap p{
     font-size:14px;
     line-height:30px;
 }
+
+/*以下、問合せボタンになります*/
 
 .second-about{
     display:inline-block;
@@ -179,7 +183,6 @@ header{
     font-size:15px;
     color:orange;
     background-color:white;
-    
 }
 
 .second-about span{
@@ -215,28 +218,27 @@ header{
     width:50px;
 }
 
-/*------------------------------------*/
-
+/*-------豊富な転職実績--------*/
 
 .third-1st-wrap{
- position:relative;
- margin:0 auto;
- margin-top :100px;
- margin-bottom: 100px;
- height:600px;
- width:1000px;
- border-radius:20px;
- padding-top:30px;
- text-align:center;
- background-color:#fffaf0;
+    position:relative;
+    margin:0 auto;
+    margin-top :100px;
+    margin-bottom: 100px;
+    height:600px;
+    width:1000px;
+    border-radius:20px;
+    padding-top:30px;
+    text-align:center;
+    background-color:#fffaf0;
 }
 
 .number-01{
     position:absolute;
     top:-50px;
     left:45%;
-    border-radius:50px;
     padding:20px;
+    border-radius:50px;
     background-color:#fffaf0;
     font-size:30px;
     color:orange;
@@ -253,6 +255,7 @@ header{
     line-height:30px;
 }
 
+/*転職先企業の例の一覧です*/
 .third-1st-icons-wrapper{
     margin:0 auto;
     border-radius:30px;
@@ -280,8 +283,6 @@ header{
     height:30px;
 }
 
-
-
 .third-1st-icons-container{
     text-align:center;
 }
@@ -290,16 +291,10 @@ header{
     margin-left:20px;
     width:180px;
     height:120px;
-    
 }
 
-.third-1st-img-1stline-container{
-}
 
-.third-1st-img-2ndline-container{
-}
-
-/*------------------------------------*/
+/*--------多くの受講者受入実績---------*/
 .third-2nd-wrap{
     position:relative;
     margin:0 auto;
@@ -314,8 +309,8 @@ header{
     position:absolute;
     top:-50px;
     left:45%;
-    border-radius:50px;
     padding:20px;
+    border-radius:50px;
     background-color:#fffaf0;
     font-size:30px;
     color:orange;
@@ -323,7 +318,6 @@ header{
 
 .third-2nd-txt-wrapper{
     padding-top:30px;
-    
 }
 
 .third-2nd-txt-wrapper h1{
@@ -341,9 +335,7 @@ header{
     border-radius:30px;
     width:900px;
     background-color:white;
-    
 }
-
 
 .third-2nd-icons-wrapper img{
     margin:30px 0 20px 50px;
@@ -351,9 +343,7 @@ header{
     height:200px;
 }
 
-
-
-/*------------------------------------*/
+/*----現役エンジニアが講師-------*/
 
 .third-3rd-wrap{
     position:relative;
@@ -368,8 +358,8 @@ header{
     position:absolute;
     top:-50px;
     left:45%;
-    border-radius:50px;
     padding:20px;
+    border-radius:50px;
     background-color:#fffaf0;
     font-size:30px;
     color:orange;
@@ -377,9 +367,9 @@ header{
 
 .third-3rd-txt-wrapper{
     margin:0 auto;
+    padding-top:30px;
     height:100px;
     width:900px;
-    padding-top:30px;
     text-align:center;
     line-height:10px;
 }
@@ -395,15 +385,15 @@ header{
 .third-3rd-txt-wrapper span{
     font-size:25px;
     color:orange;
-    
 }
+
+/*各現役エンジニアの紹介欄になります*/
 .third-3rd-icons-wrapper{
     display:flex;
     margin:0 auto;
     margin-top:30px;
     width:900px;
     height:400px;
-
 }
 
 .third-3rd-icon{
@@ -413,10 +403,6 @@ header{
     width:250px;
     border-radius:20px;
     background-color:white;
-}
-
-.third-3rd-img-logo{
-    
 }
 
 .grooves{
@@ -431,7 +417,6 @@ header{
     margin-top:30px;
 }
 
-
 .third-3rd-icon-container{
     position:absolute;
     top:130px;
@@ -441,7 +426,6 @@ header{
 }
 
 .third-3rd-icon-container img{
-    
     display:inline-block;
     line-height:80px;
 }
@@ -451,11 +435,9 @@ header{
     vertical-align:70%;
     width:150px;
     text-align:left;
-    
 }
 
 .third-3rd-icon-container span{
-    
     font-size:10px;
     color:orange;
 }
@@ -471,8 +453,6 @@ header{
     background-color:#f5f5f5;    
 }
 
-
-
 .third-3rd-txt-comment{
     display:inline-block;
     position:relative;
@@ -480,21 +460,20 @@ header{
     margin:10px 10px;
     width:90%;
     font-size:13px;
-    
 }
 
+/*各コメントの吹き出しの▲部分です。*/
 .third-3rd-txt-comment:before{
+    display: block;
     content:'';
     position:absolute;
     left: 5px;
     top: -25px;
-    display: block;
     width: 0;
     height: 0;
     border-right: 15px solid transparent;
     border-bottom: 15px solid #f5f5f5;
     border-left: 15px solid transparent;
-    
 }
 
 /* ４番目のセクション　POTEPAMCAMPの選べるコース*/
@@ -516,7 +495,6 @@ header{
     width:700px;
     height:150px;
     text-align:center;
-    
 }
 
 .forth-txt-top-wrap h1{
@@ -526,7 +504,6 @@ header{
 .forth-txt-top-wrap h3{
     margin-top:-30px;
     margin-bottom:-20px;
-    
 }
 
 /*Webコース*/
@@ -547,10 +524,9 @@ header{
     position:absolute;
     top:0;
     left:0;
+    z-index:2;
     width:100%;
     height:100%;
-    z-index:2;
-    
 }
 
 .forth-txt-wrap-course-a{
@@ -569,14 +545,11 @@ header{
     color:orange;
 }
 
-
-
 .forth-txt-wrap-course-a a{
     position:absolute;
     width:100%;
     height:100%;
 }
-
 
 .forth-txt-wrap-course-a p{
    position:absolute;
@@ -589,14 +562,13 @@ header{
    height:60%;
 }
 
-
+/*idは学習の為に試しに使用している為、特別な意図はございません*/
 
 #standard{
     margin-bottom:-30px;
     font-size:15px;
     color:orange;
 }
-
 
 
 
@@ -617,12 +589,10 @@ header{
     position:absolute;
     top:0;
     left:0;
+    z-index:2;
     width:100%;
     height:100%;
-    z-index:2;
-    
 }
-
 
 .forth-txt-wrap-course-b{
     position:absolute;
@@ -652,7 +622,7 @@ header{
     height:60%;
 }
 
-
+/*idは学習の為に試しに使用している為、特別な意図はございません*/
 #expert{
     margin-bottom:-30px;
     font-size:15px;
@@ -678,7 +648,6 @@ header{
     top:0;
     left:300px;
     width:700px;
-    
 }
 
 .forth-txt-wrapper span{
@@ -698,6 +667,7 @@ header{
     font-weight:bold;
 }
 
+
 .applicable-person{
    margin-top:-30px;
    margin-bottom:-10px;
@@ -709,6 +679,11 @@ header{
     margin-left:550px;
     color:gray;
 }
+
+.forth-btn:hover{
+    opacity:0.9;
+}
+
 
 
 
@@ -728,9 +703,7 @@ header{
 }
 
 .fifth-txt-top-wrap h1{
-   
     font-size:40px;
-    
 }
 
 .fifth-txt-top-wrap h3{
@@ -738,16 +711,12 @@ header{
     margin-top:-30px;
 }
 
-
-
-
 .fifth-contents-wrap{
     position:relative;
     margin-left:200px;
     margin-top:80px;
     width:800px;
 }
-
 
 .fifth-txt-message{
     position:absolute;
@@ -771,9 +740,7 @@ header{
 
 .fifth-txt-wrapper img{
     position:absolute;
-   
 }
-
 
 .fifth-img-wrapper{
     position:absolute;
@@ -798,7 +765,6 @@ header{
 .section-sixth{
     margin-top:100px;
     padding-bottom:100px;
-
 }
 
 .sixth-txt-top-wrap{
@@ -814,6 +780,7 @@ header{
     margin-top:-30px;
 }
 
+/*以下、各受講生の紹介の部分となります*/
 .sixth-contents-wrap{
     display:flex;
     justify-content:center;
@@ -824,19 +791,18 @@ header{
 .sixth-contents-wrapper{
     position:relative;
     margin-left:20px;
+    z-index:1;
     width:300px;
     height:400px;
-    z-index:1;
 }
 
 .sixth-contents-wrapper a{
     position:absolute;
     top:0;
     left:0;
+    z-index:2;
     width:100%;
     height:100%;
-    z-index:2;
-    
 }
 .sixth-contents-wrapper:hover .sixth-img-inner{
     transform:scale(1.1);
@@ -847,8 +813,6 @@ header{
     color:orange;
 }
 
-
-
 .sixth-img-wrapper{
     position:relative;
     width:300px;
@@ -856,32 +820,29 @@ header{
     overflow: hidden;
 }
 
-
-
 .sixth-img-inner{
     transition:all 1s;
     width:300px;
     height:270px;
-
 }
-
 
 .a{
     background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.9)230px),url(https://camp.potepan.com/wp-content/uploads/2020/11/%E5%9D%82%E6%9C%AC%E3%81%95%E3%82%93.jpg); 
     background-size:contain;
-
 }
-
+/*img-inner-bのみ外枠のsixth-img-wrapperと画像の上部との間に空白が生じ、解消できないためpositionで修正しました。
+当初は、問題無かったのですが、課題提出直前にindexのインデント等整理した後に発生しました。*/
 .b{
+    position:absolute;
+    top:0;
+    left:0;
     background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.9)230px),url(https://camp.potepan.com/wp-content/uploads/2020/11/%E5%9D%82%E4%BA%95%E3%81%95%E3%82%93.jpg); 
     background-size:contain;
-
 }
 
 .c{
     background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.9)230px),url(https://camp.potepan.com/wp-content/uploads/2020/11/%E6%B8%85%E6%B0%B4%E3%81%95%E3%82%93.jpg); 
     background-size:contain;
-
 }
 
 .sixth-txt-inner{
@@ -898,11 +859,10 @@ header{
     font-size:12px;
     vertical-align:middle;
 }
+
 .sixth-txt-inner span{
     color:orange; 
     font-size:16px;
-    
-    
 }
 
 .sixth-txt-wrapper-comment{
@@ -910,7 +870,7 @@ header{
     height:100px;
     font-size:14px;
 }
-
+/*Interviewのボタンです*/
 .sixth-btn{
     display:block;
     margin:0 auto;
@@ -923,6 +883,9 @@ header{
     background-color:orange;
 }
 
+.sixth-btn:hover{
+    opacity:0.9;
+}
 .sixth-btn span{
     letter-spacing:5px;
 }
@@ -937,8 +900,8 @@ header{
     background-repeat:no-repeat;
     background-position:right top;
     background-color:#f5f5f5;
-
 }
+
 .seventh-txt-top-wrap{
     margin:0 auto;
     margin-bottom:50px;
@@ -950,7 +913,6 @@ header{
     margin-top:-30px;
 }
 
-   
 .seventh-contents-wrap{
     display:flex;
     margin:0 auto;
@@ -962,7 +924,6 @@ header{
 .seventh-icon-wrap{
     position:relative;
     flex:auto;
-   
     text-align:center;
 }
 
@@ -983,17 +944,14 @@ header{
     color:orange;
 }
 
-
-
 .seventh-img-wrapper{
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:20px;
     margin:0 auto;
+    border-radius:20px;
     width:300px;
     height:200px;
-    
 }
 
 .free {
@@ -1006,7 +964,6 @@ header{
 
 .mag{
     border:3px solid black;
-
 }
 
 .seventh-img-inner{
@@ -1034,6 +991,7 @@ footer{
     font-size:40px;    
 }
 
+/*左側の列です*/
 .footer-left-column{
      display:inline-block;
      vertical-align:top;
@@ -1041,29 +999,27 @@ footer{
      width:20%;
      color:white;
 }
+
 .footer-img-logo{
     width:200;
     height:30px;
 }
-      
+
 .footer-img-wrap{
-     width:180px;
+    width:180px;
     text-align:center;
 }
 
 .footer-img-wrap img{
-    margin:0 auto;
     width:50px;
     height:50px;
-    
 }
 
+/*Facebookアイコン*/
 .facebook{
     display:inline-block;
     position:relative;
-    margin-right:20px;
-    width:50px;
-    height:50px;
+    margin-right:10px;
 }
 
 .facebook a{
@@ -1075,14 +1031,14 @@ footer{
 }
 
 .facebook:hover{
-    opacity:0.7;
+    opacity:0.8;
 }
 
+/*Twitterアイコン*/
+
 .twitter{
-    display:inline-block;
     position:relative;
-    width:50px;
-    height:50px;
+    display:inline-block;
 }
 
 .twitter a{
@@ -1091,11 +1047,15 @@ footer{
     left:0;
     width:100%;
     height:100%;
+
 }
 
 .twitter:hover{
-    opacity:0.7;
+    opacity:0.8;
 }
+
+/*右側の列です*/
+
 
 .footer-right-column{
     display:inline-block;
